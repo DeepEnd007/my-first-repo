@@ -81,3 +81,141 @@ body{
 .navigation li:hover{
     cursor: pointer;
 }
+.wrap{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;;
+
+}
+.container-content{
+    width: 964px;
+    height: auto;
+    display: flex;
+position:relative;
+
+
+}
+.container-left{
+    width: calc( 1005 / 1306 * 100%);
+    position: relative;
+
+}
+.vertical-p{
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+    position: absolute;
+        left: 40px;
+        top: 0;
+        margin: 0;
+    font-size: 36px;
+    line-height: 44px;
+    font-family: "Blacker Display",helvetica,arial,verdana,sans-serif;
+    font-weight: 900;
+    margin: 0;
+    color: #202020;
+}
+@font-face {
+    font-family: "Blacker Display";
+    src: url(./BlackerDisplay-Heavy.woff2);
+}
+.story-img{
+    width: 632px;
+    height: 396px;
+    margin-left: 45px;
+    margin-top: 30px;
+
+}
+.content{
+    padding: 25px 30px 0px 25px;
+    position: absolute;
+    bottom: -25px;
+    max-width: 100%;
+    width: 60%;
+    background-color: rgba(255,255,255,0.95);
+    border-left: 1px solid #202020;
+    z-index: 2;
+    -webkit-transition: width 0.3s ease-out, height 0.3s ease;
+    transition: width 0.3s ease-out, height 0.3s ease;
+}
+.data{
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1.5px;
+}
+
+.date{
+    margin-right: 10px;
+
+}
+.story-title{
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 36px;
+}
+.story-title:hover{
+    text-decoration: underline;
+}
+h3{
+    font-family: "Blacker Display",helvetica,arial,verdana,sans-serif;
+    font-weight: 900;
+    margin: 0;
+    color: #202020;
+}
+.description{
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #202020;
+    font-family: "Open Sans";
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url(./OpenSans-Regular.woff2);
+}
+.button{
+    position: relative;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: "Open Sans",helvetica,arial,verdana,sans-serif;
+    transition: .4s ease color;
+    line-height: 17px;
+    color: #202020;
+    text-decoration: none;
+}
+.button::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 6px);
+    background-color: #ffcb00;
+    -webkit-transition: height 0.3s ease, bottom 0.3s ease;
+    transition: height 0.3s ease, bottom 0.3s ease;
+    z-index: -1;
+}
+.button:hover{
+    cursor: pointer;
+
+}
+.button:hover::before{
+    bottom: 0;
+    height: 3px;
+}
+
+/* special */
+
+.scroller{
+    width: 160px;
+    height: 310px;
+    overflow: scroll;
+}
+.scroller img{
+    display: block;
+    width: 100px;
+    margin-bottom: 15px;
+
+}
+.left{
+   
+}
